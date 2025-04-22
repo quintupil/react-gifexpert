@@ -8,6 +8,13 @@ import { useState } from "react";
 import { AddCategory, GifGrid } from "./component";
 
 export const GifExpertApp = () => {
+  //Importante no se debe condicionar los hooks porque React puede perder la referencia al useState y no se actualiza
+
+  /*if(true) 
+   const [categories1, setCategories1] = useState(["One Punch"]);
+  const [categories2, setCategories2] = useState(["Dragon Ball"]);
+  const [categories3, setCategories3] = useState(["Naruto"]);*/
+
   const [categories, setCategories] = useState(["One Punch"]);
 
   const onAddCategory = (newCategory) => {

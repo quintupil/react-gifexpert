@@ -11,7 +11,8 @@ export const useFetchGifs = (category) => {
     setIsLoading(false);
   };
 
-  //HOOK: useEffect
+  //HOOK useEffect: Nos permite ejecutar efectos secundarios. Se entiende como algún proceso se requiera ejecutar cuando algo suceda.
+  //useEffect: Tiene una firma diferente al useState. El useEffect recibe una función y un arreglo de dependencias.
   useEffect(() => {
     getImages(category);
   }, []);

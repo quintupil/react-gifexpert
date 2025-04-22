@@ -9,7 +9,7 @@ export const AddCategory = ({ onNewCategory }) => {
   };
 
   const onSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //Evitar que se recargue la página
     //console.log(event);
     if (inputValue.trim().length <= 1) return;
     //setCategories((categories) => [inputValue, ...categories]);
